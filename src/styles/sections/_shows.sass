@@ -1,0 +1,36 @@
+@use "../config/colors"
+
+.shows
+    padding: 2vw 5.6vw
+
+    &__list
+        margin-top: 44px
+        display: none
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 24px
+
+        &--is-active
+            display: grid
+
+        &__item
+
+            img
+                width: 100%
+                border-radius: 4px
+
+    &__tabs
+        display: flex
+        justify-content: center
+
+        &__button
+            color: colors.$corTextoSecundario
+            background-color: transparent
+            border: none
+            font-size: 20px
+            text-transform: uppercase
+            margin: 0 1vw
+            cursor: pointer
+            border-bottom: 5px solid colors.$corDeFundo
+
+            &--is-active
+                border-bottom: 5px solid colors.$corTextoSecundario

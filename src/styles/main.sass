@@ -1,11 +1,12 @@
 @use "./config/reset"
 @use "./config/colors"
 @use "./config/fonts"
+
 @use "./sections/hero"
+@use "./sections/shows"
 
 body
     background-color: colors.$corDeFundo
-    font-family: Avenir, sans-serif
 
 @mixin text($fontSize: 16px)
     font-size: $fontSize
