@@ -1,2 +1,39 @@
+@use "./config/reset"
+@use "./config/colors"
+@use "./config/fonts"
+@use "./sections/hero"
+
 body
-    background-color: #fff
+    background-color: colors.$corDeFundo
+    font-family: Avenir, sans-serif
+
+@mixin text($fontSize: 16px)
+    font-size: $fontSize
+    line-height: $fontSize + 10px
+    color: colors.$corTextoPrincipal
+
+@mixin title($fontSize: 40px)
+    @include text(fontSize)
+    color: colors.$corTextoSecundario
+
+.text--big
+    @include text(18px)
+
+.text
+    @include text
+
+.text--small
+    @include text(12px)
+
+.link--text
+    @include text(18px)
+    color: colors.$corTextoSecundario
+
+.title--big
+    @include title(44px)
+
+.title
+    @include title()
+
+.title--small
+    @include title(28px)
