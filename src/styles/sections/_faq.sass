@@ -1,0 +1,56 @@
+@use "../config/colors"
+
+.faq
+    padding: 5.6vw
+
+    h2
+        text-align: center
+        margin-bottom: 24px
+
+    &__questions
+        list-style-type: none
+
+        &__item
+            background-color: colors.$corDeFundoItemFaq
+            margin-bottom: 16px
+
+            &__question
+                color: colors.$corTextoSecundario
+                font-size: 20px
+                padding: 24px
+                display: block
+                cursor: pointer
+                position: relative
+
+                &::after
+                    content: "+"
+                    position: absolute
+                    top: 0
+                    right: 24px
+                    height: 100%
+                    display: flex
+                    align-items: center
+                    font-size: 40px
+
+            &__answer
+                height: 0
+                overflow: hidden
+                padding: 0 24px
+                transition: height, .25s ease
+
+                &__list
+                    padding: 0 24px
+                    list-style-type: disc
+                    color: colors.$corTextoPrincipal
+
+                    li
+                        margin-bottom: 16px
+
+            &--is-open
+
+                .faq__questions__item__question::after
+                    content: "-"
+
+                .faq__questions__item__answer
+                    padding-bottom: 24px
+                    transition: height, .25s ease
