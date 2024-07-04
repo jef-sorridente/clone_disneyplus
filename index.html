@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+  <section>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clone Disney+</title>
     <link rel="stylesheet" href="./dist/css/main.css" />
-  </head>
+  </section>
   <body>
+    <header class="header">
+      <h1>
+        <img src="./dist/images/disneyplus.svg" alt="Disney+" />
+      </h1>
+      <ul class="header__links">
+        <li class="header__links__item">
+          <a href="#" class="button">Assine Agora</a>
+        </li>
+        <li class="header__links__item">
+          <a href="#" class="button">Entrar</a>
+        </li>
+      </ul>
+    </header>
     <section class="hero">
       <div class="hero__content">
-        <h1 class="hero__content__branding">
+        <div class="hero__content__branding">
           <img src="./dist/images/disneyplus.svg" alt="Disney+" />
-        </h1>
+        </div>
         <h3 class="title--small">As melhores histórias em um só lugar.</h3>
         <p>
           <a class="link--text" href="">Assinar o Disney+</a><br />
@@ -324,6 +337,57 @@
         </li>
       </ul>
     </section>
+    <footer class="footer">
+      <img
+        class="footer__logo"
+        src="./dist/images/disneyplus.svg"
+        alt="Disney+"
+      />
+      <ul class="footer__links">
+        <li class="footer__links__item">
+          <div class="language-selector">
+            <img src="./dist/images/icones/globe.svg" alt="Globo do mundo" />
+            <select>
+              <option>English</option>
+              <option selected>Português</option>
+            </select>
+          </div>
+        </li>
+        <li class="footer__links__item">
+          <a href="#" class="text--small">Termos e condições de Uso</a>
+        </li>
+        <li class="footer__links__item">
+          <a href="#" class="text--small">Política de privacidade</a>
+        </li>
+        <li class="footer__links__item">
+          <a href="#" class="text--small">Proteção de Dados do Brasil</a>
+        </li>
+        <li class="footer__links__item">
+          <a href="#" class="text--small">Anúncios personalizados</a>
+        </li>
+        <li class="footer__links__item">
+          <a href="#" class="text--small">Dispositivos compatíveis</a>
+        </li>
+        <li class="footer__links__item">
+          <a href="#" class="text--small">Ajuda</a>
+        </li>
+        <li class="footer__links__item">
+          <a href="#" class="text--small">Sobre o Disney+</a>
+        </li>
+      </ul>
+      <p class="text--small">
+        © 2024 Disney e suas empresas afiliadas. Todos os direitos reservados. A
+        programação do conteúdo esportivo varia de acordo com o plano. Para usar
+        o Disney+, é necessário ser assinante e ter mais de 18 anos de idade.
+        Conteúdo sujeito a disponibilidade.
+      </p>
+      <p class="text--small">
+        O serviço Disney+ é comercializado por The Walt Disney Company (Brasil)
+        Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555,
+        12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M
+        73.042.962/0004-20
+      </p>
+    </footer>
     <script src="src/scripts/main.js"></script>
   </body>
 </html>
