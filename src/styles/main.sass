@@ -8,6 +8,7 @@
 @use "./sections/available-devices"
 @use "./sections/faq"
 @use "./sections/footer"
+@use "./sections/header"
 
 body
     background-color: colors.$corDeFundo
@@ -44,16 +45,41 @@ body
     @include title(28px)
 
 .button
-    display: block
+    display: flex
+    align-items: center
+    justify-content: center
     width: 100%
     height: 60px
     font-size: 18px
-    color: colors.$corTextoSecundario
-    background-color: colors.$corDeFundoBotao
-    text-transform: uppercase
-    border: none
     border-radius: 4px
-    margin: 2vw 0 8px
+    border: 1px solid colors.$corDeFundoBotaoPrimario
+    letter-spacing: 1px
+    padding: 8px 14px
+    transition: .25s
+    color: colors.$corTextoSecundario
+    background-color: colors.$corDeFundoBotaoPrimario
+    text-transform: uppercase
+    text-decoration: none
+    border: none
+    cursor: pointer
+
+    &:hover
+        background-color: lighten(colors.$corDeFundoBotaoPrimario, 3%)
+
+    &--secundary
+        background-color: colors.$corDeFundoBotaoSecundario
+        border: 1px solid colors.$corDeFundoBotaoSecundario
+
+        &:hover
+            background-color: lighten(colors.$corDeFundoBotaoSecundario, 3%)
+
+    &--dark
+        background-color: rgba(colors.$corDeFundoBotaoDark, 0.8)
+        border: 1px solid colors.$corTextoSecundario
+
+        &:hover
+            background-color: colors.$corTextoSecundario
+            color: colors.$corDeFundo
 
 .image-text-section
     padding: 5.6vw
