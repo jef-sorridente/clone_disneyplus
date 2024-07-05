@@ -8,12 +8,23 @@
         display: flex
         justify-content: space-around
         margin-top: 50px
+        list-style-type: none
+
+        @media (max-width:768px)
+            display: block
+
+        .button
+            margin-top: 24px
 
         &__item
             max-width: 380px
             width: 100%
             text-align: center
             padding: 60px 44px 44px
+
+            @media (max-width:768px)
+                display: flex
+                flex-direction: column
 
             img
                 height: 83px

@@ -11,6 +11,9 @@
     transition: background-color .5s ease
     z-index: 1
 
+    @media (max-width:768px)
+        padding: 0 12px 0 20px
+
     &--is-hidden
         background-color: transparent
         transition: background-color .5s ease
@@ -27,6 +30,9 @@
         margin: 5px
         transition: opacity .5s ease
 
+        @media (max-width:768px)
+            max-width: 64px
+
     &__links
         display: flex
         list-style-type: none
@@ -36,3 +42,9 @@
 
     .button
         height: 50px
+
+        @media (max-width:768px)
+            height: 40px
+            padding: 8px 11px
+            font-size: 13px
+            letter-spacing: 0
