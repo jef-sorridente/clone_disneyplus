@@ -14,11 +14,23 @@
         padding-top: calc( 50vw + 25px )
         margin-top: -55px
 
+    @media (min-width:769px) and (max-width:1024px)
+        background-image: url(../images/hero_tablet.jpg)
+        background-size: contain
+        background-repeat: no-repeat
+        padding-top: calc( 50vw + 25px )
+        margin-top: -85px
+
     .button
         margin: 2vw 0 8px
 
     &__content
         max-width: 640px
+        margin: none
+        @media (max-width:768px)
+            margin: auto
+        @media (min-width:769px) and (max-width:1024px)
+            margin: auto
 
         &__branding
             max-width: 320px
